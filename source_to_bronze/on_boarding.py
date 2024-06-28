@@ -6,7 +6,6 @@
 
 # container_name = 'amitdb'
 # storage_account_name = 'amitde'
-# storage_account_access_key = 'Id/4Fd1GS9fUqg97F2beTqaK7Ub6PWpIEuzgeq/5zioc8oNWGIhHwRuLN0xzzPupncxdFC/29hA6+ASt+o5QeA=='
 
 # dbutils.fs.mount(
 #   source = f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net",
