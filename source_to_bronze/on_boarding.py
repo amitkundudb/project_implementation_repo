@@ -1,0 +1,24 @@
+# Databricks notebook source
+# MAGIC %md
+# MAGIC ##### Mount ADLS Storage
+
+# COMMAND ----------
+
+# container_name = 'amitdb'
+# storage_account_name = 'amitde'
+# storage_account_access_key = 'Id/4Fd1GS9fUqg97F2beTqaK7Ub6PWpIEuzgeq/5zioc8oNWGIhHwRuLN0xzzPupncxdFC/29hA6+ASt+o5QeA=='
+
+# dbutils.fs.mount(
+#   source = f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net",
+#   mount_point = '/mnt/vtex',
+#   extra_configs = {f"fs.azure.account.key.{storage_account_name}.blob.core.windows.net": storage_account_access_key}
+# )
+
+# COMMAND ----------
+
+read_df =spark.read.format('json').load('/mnt/vtex/project_implementation/vtex_test_data.json')
+read_df.display()
+
+# COMMAND ----------
+
+read_df.printSchema()
