@@ -6,7 +6,6 @@
 
 # container_name = 'amitdb'
 # storage_account_name = 'amitde'
-
 # dbutils.fs.mount(
 #   source = f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net",
 #   mount_point = '/mnt/vtex',
